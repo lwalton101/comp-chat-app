@@ -1,0 +1,20 @@
+.message{
+    background-color: blue;
+}
+#messageInput{
+    width: 90vw;
+    border: none;
+    background-color: rgb(196, 196, 196);
+}
+#send{
+    width: 10vw;
+    border: none;
+
+}
+#input{
+    display: flex;
+    position: fixed;
+    bottom: 0;
+    height: 5%;
+    width: 100vw;
+}

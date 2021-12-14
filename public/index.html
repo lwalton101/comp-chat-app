@@ -1,0 +1,20 @@
+<html>
+    <head>
+        <link rel="stylesheet" href=".\css\main.css">
+    </head>
+    <script>
+        function send(){
+            var messageBox = document.getElementById("messageInput");
+            window.location = "chat.html?name=" + messageBox.value;
+        }
+    </script>
+<body>
+<h1 id="title">Connect To Chat</h1>
+
+
+<div id="inputDiv">
+    <input type="text" id="messageInput" value="Name"><br><br>
+    <button id="subBtn" onclick="send()">Join</button>
+</div>
+</body>
+</html>
