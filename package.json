@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "cls && nodemon -e * index.js"
+    "dev": "cls && nodemon -e * index.js",
+    "start":"node index.js"
   },
   "author": "",
   "license": "ISC",
