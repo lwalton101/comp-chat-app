@@ -2,9 +2,9 @@ const express = require('express');
 const url = require('url');
 const WebSocket = require("ws");
 
-const wss = new WebSocket.Server({port: 8082});
 const app = express();
 const webPort = process.env.PORT || 3000;
+const wss = new WebSocket.Server({port: webPort});
 
 app.use(express.static('public'));
 
