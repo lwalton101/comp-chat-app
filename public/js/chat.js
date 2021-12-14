@@ -1,4 +1,4 @@
-ws = new WebSocket("ws://localhost:8082? "+ window.location.href.split("?")[1]);
+ws = new WebSocket(location.origin.replace("http", 'ws') + "?"+ window.location.href.split("?")[1]);
 
 const messageDiv = document.getElementById("chat-window");
 const messageInput = document.getElementById("messageInput");
