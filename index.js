@@ -4,12 +4,12 @@ const WebSocket = require("ws");
 
 const wss = new WebSocket.Server({port: 8082});
 const app = express();
-const webPort = 3000;
+const webPort = process.env.PORT || 3000;
 
 app.use(express.static('public'));
 
 app.listen(webPort, () => {
-  console.log(`Listening at http://localhost:${webPort}`);
+  console.log(`Listening at https://localhost:${webPort}`);
 });
 
 wss.on("connection", function connection(ws, req) {
